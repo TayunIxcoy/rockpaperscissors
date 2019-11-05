@@ -11,20 +11,24 @@ let randomNumber=0;
 $("#shoot").click(function() {
     userInput= $("#input").val();
     console.log(userInput + ' <-- uuserinput')
-    $("#userChoice").append(userInput);
+    $("#userChoice").text(userInput);
     randomNumber=Math.random()
-    if (randomNumber<.33){
+    if (randomNumber<.33) {
         comChoice="paper";
 
     } else if (randomNumber<.66){
         comChoice="rock";
     }
-    else  (randomNumber<.99 ) {
+    else if (randomNumber<1.0 ) {
         comChoice="scisors";
     }
+     $("#computerChoice").text(comChoice);
+    //if human beats computer then human wins//
 
-
-
-
+    console.log();
+    if ((comChoice==="rock" && userInput==="paper")
+        || (comChoice==="rock" && userInput==="paper") {
+    console.log('Userwins')
+    }
 
  });
