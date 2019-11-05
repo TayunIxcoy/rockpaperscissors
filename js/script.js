@@ -27,7 +27,7 @@ $("#shoot").click(function() {
 
     console.log();
     if ((comChoice==="rock" && userInput==="paper")
-        || (comChoice==="rock" && userInput==="paper") {
+        || (comChoice==="rock" && userInput==="paper")) {
     console.log('Userwins')
     }
 
